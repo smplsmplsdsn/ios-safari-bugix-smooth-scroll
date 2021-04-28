@@ -11,12 +11,7 @@ const bugfixScroll = (tgt) => {
   let is_top = true,
       is_bottom = false,
       moving;
-  
-  // ページ上部にあるときは、1px下に移動する
-  if (tgt.scrollTop() == 0) {
-    tgt.scrollTop(1);      
-  }  
-  
+    
   /**
    * スクロール位置が上部、もしくは下部にあるとき1px移動する
    */
@@ -52,6 +47,11 @@ const bugfixScroll = (tgt) => {
       }, 10);      
     }    
   }
+  
+  // ページ上部にあるときは、1px下に移動する
+  if (tgt.scrollTop() == 0) {
+    tgt.scrollTop(1);      
+  }    
   
   // tgt内をスクロールしている間、処理する
   tgt.on("scroll", checkScroll);
