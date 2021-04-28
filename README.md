@@ -1,8 +1,8 @@
 # iOS fixed で絶対配置して惰性スクロールしてロックされるとき、そのフリーズの回避方法
 
-世の中にWebアプリが広まることを願って、このサンプルを公開させていただきます。
-
 確認方法： iOS Safari の実機で確認する必要があります。
+
+解説記事： [https://www.simplesimplesdesign.com/web/markup/javascript/ios-safari-bugfix-smooth-scroll/](https://www.simplesimplesdesign.com/web/markup/javascript/ios-safari-bugfix-smooth-scroll/)
 
 ## フリーズするサンプル
 
