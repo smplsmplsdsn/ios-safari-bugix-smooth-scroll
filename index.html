@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iOS fixed で絶対配置して惰性スクロールすると数秒固まるとき、そのフリーズ回避方法</title>
+  </head>
+  <style>
+    html,
+    body,
+    div {
+      height: 100%;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;     
+      padding: 2rem 2rem 5rem;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+    h1 {
+      margin: 0;
+      font-size: 100%;
+    }
+    li {
+      margin: 1rem;
+    }
+  </style>
+<body>
+  <div>
+    <h1>iOS fixed で絶対配置して惰性スクロールすると数秒固まるとき、そのフリーズ回避方法</h1>
+    <ul>
+      <li><a href="no-js.html">不具合状態を再現する場合</a></li>
+      <li><a href="jquery.html">jQueryを利用した場合</a></li>
+      <li><a href="normal.html">素のJavaScriptのみの場合</a></li>
+    </ul>
+  </div>
+</body>
+</html>

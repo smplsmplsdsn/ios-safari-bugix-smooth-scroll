@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iOS fixed で絶対配置して惰性スクロールすると数秒固まるとき、そのフリーズ回避方法</title>
+  </head>
+  <link rel="stylesheet" href="common.css">
+<body>
+  <div class="scroll">
+    <div class="scroll-inner">
+      <h1>フリーズ バージョン</h1>
+      <h2>フリーズする2つのケース</h2>
+      <p>A. 画面上部で、さらに上スクロールしようとすると、フリーズします（2秒ほど放置でスクロールできるようになります）。</p>
+      <p>B. ページ内スクロールで下部までスクロールしてビヨーンという惰性が終わったあとに、さらに下にスクロールしようとすると、フリーズします（上部のビヨーンが終わったあとに、さらに上にスクロールしようしたときもフリーズします）。</p>
+      <p>フリーズした場合は、数秒待つと、フリーズは解除され、またスクロールできるようになります。</p>
+      <ul>
+        <li><a href="no-js.html">不具合状態を再現する場合</a></li>
+      </ul>
+      <p>このiOSのバグとしか言えない挙動に対応したJavaScirpt実装版を紹介します。</p>
+      <h2>フリーズ回避バージョン</h2>
+      <ul>
+        <li><a href="jquery.html">jQueryを利用した場合</a></li>
+        <li><a href="normal.html">素のJavaScriptのみの場合</a></li>
+      </ul>
+      <p>jQueryを使うと簡単な記述で実装できるのでオススメです。基本コピペで問題なし、クラス名を用途に合わせて変更するだけです。<br>もちろん、jQueryなしでDOM指定での記述もできますが、このサンプルの記述は必要最低限のみ記述しています。実際には、要素判別処理など、ご利用サイトのhtmlソースに合わせて改良されたほうが安全です。</p>
+    </div>
+  </div>
+  
+</body>
+</html>
